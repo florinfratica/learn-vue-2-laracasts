@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .is-loading { background-color: red; }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <button :class="{ 'is-loading' : isLoading }" @click="toggleClass">Toggle Me</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#root',
+
+            data: {
+                isLoading: false
+            },
+
+            methods: {
+                toggleClass() {
+                    this.isLoading = true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
