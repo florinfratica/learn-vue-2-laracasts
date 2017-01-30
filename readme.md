@@ -6,3 +6,4 @@ This is my repository for the Laracasts series [Learn Vue 2: Step By Step](https
 3. [Lists](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/3) (5:27)
 4. [Vue Event Listeners](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/4) (5:04)
 5. [Attribute and Class Binding](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/5) (5:57)
+6. [The Need for Computed Properties](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/6) (6:20)
