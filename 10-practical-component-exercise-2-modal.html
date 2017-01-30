@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.css">
+    <style type="text/css">
+        body { padding-top: 40px; }
+    </style>
+</head>
+<body>
+    <div id="root" class="container">
+        <modal v-show="showModal" @close="showModal = false">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </modal>
+        <button @click="showModal = true">Show Modal</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script>
+        Vue.component('modal', {
+            template: `
+                <div class="modal is-active">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <p><slot></slot></p>
+                        </div>
+                    </div>
+                    <button class="modal-close" @click="$emit('close')"></button>
+                </div>
+            `,
+        });
+
+        new Vue({
+            el: '#root',
+            
+            data: {
+                showModal: false
+            }
+        });
+    </script>
+</body>
+</html>

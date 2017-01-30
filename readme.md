@@ -10,3 +10,4 @@ This is my repository for the Laracasts series [Learn Vue 2: Step By Step](https
 7. [Components 101](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/7) (5:02)
 8. [Components Within Components](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/8) (2:36)
 9. [Practical Component Exercise #1: Message](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9) (6:21)
+10. [Practical Component Exercise #2: Modal](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/10) (5:47)
