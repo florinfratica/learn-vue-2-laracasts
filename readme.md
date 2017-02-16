@@ -12,3 +12,4 @@ This is my repository for the Laracasts series [Learn Vue 2: Step By Step](https
 9. [Practical Component Exercise #1: Message](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9) (6:21)
 10. [Practical Component Exercise #2: Modal](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/10) (5:47)
 11. [Practical Component Exercise #3: Tabs](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/11) (14:58)
+12. [Component Communication Example #1: Custom Events](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/12)(5:59)

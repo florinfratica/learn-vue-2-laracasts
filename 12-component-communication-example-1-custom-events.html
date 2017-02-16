@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.css">
+    <style type="text/css">
+        body { padding-top: 40px; }
+    </style>
+</head>
+<body>
+    <div id="root" class="container">
+        <coupon @applied="onCouponApplied"></coupon>
+        <h1 v-if="couponApplied">You used a coupon!</h1>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script>
+        Vue.component('coupon', {
+            template: '<input placeholder="Enter your coupon code" @blur="onCouponApplied">',
+
+            methods: {
+                onCouponApplied() {
+                    this.$emit('applied');
+                }
+            }
+        });
+
+        new Vue({
+            el: '#root',
+
+            data: {
+                couponApplied: false
+            },
+
+            methods: {
+                onCouponApplied() {
+                    this.couponApplied = true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
